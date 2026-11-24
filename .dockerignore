@@ -3,4 +3,4 @@
 .env
 .env.*
 *.zip
-Backend/skill_exchange_db.sql
+Backend/*.sql
