@@ -134,8 +134,20 @@ CREATE TABLE `skills` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `skills`
---
+-- Seed general skills so new accounts have choices immediately.
+INSERT INTO `skills` (`skill_id`, `skill_name`, `category`) VALUES
+(1, 'Web Development', 'Technology'),
+(2, 'Graphic Design', 'Design'),
+(3, 'Photography', 'Creative'),
+(4, 'Video Editing', 'Creative'),
+(5, 'Data Analysis', 'Technology'),
+(6, 'Digital Marketing', 'Business'),
+(7, 'UI/UX Design', 'Design'),
+(8, 'Python Programming', 'Technology'),
+(9, 'Microsoft Excel', 'Productivity'),
+(10, 'Content Writing', 'Communication'),
+(11, 'Public Speaking', 'Communication'),
+(12, 'Mobile App Development', 'Technology');
 
 
 -- --------------------------------------------------------
@@ -300,61 +312,61 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `availability_slots`
 --
 ALTER TABLE `availability_slots`
-  MODIFY `availability_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `availability_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `connection_requests`
 --
 ALTER TABLE `connection_requests`
-  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `learning_sessions`
 --
 ALTER TABLE `learning_sessions`
-  MODIFY `session_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `session_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `match_recommendations`
 --
 ALTER TABLE `match_recommendations`
-  MODIFY `match_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `match_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `skills`
 --
 ALTER TABLE `skills`
-  MODIFY `skill_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `skill_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `skills_offered`
 --
 ALTER TABLE `skills_offered`
-  MODIFY `offered_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `offered_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `skills_wanted`
 --
 ALTER TABLE `skills_wanted`
-  MODIFY `wanted_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `wanted_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `student_profiles`
 --
 ALTER TABLE `student_profiles`
-  MODIFY `profile_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `profile_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
